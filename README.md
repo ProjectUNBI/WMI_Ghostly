@@ -30,13 +30,12 @@ add the plugin in "Autostart"->"Add Plugin"->"General Plugins"->"WMI Ghostly" an
 
 If you need to trigger by only one sensor data, for example lets says "Temperature",--> then-> uncomment "line 39-41" and comment the "line 38" like the following:
 
-
-            data=w.Sensor()
             for sensor in data:
               #self.plugin.TriggerEvent("WMI_Sense_"+sensor.SensorType+"_"+sensor.Name, sensor.Value)
-               if sensor.SensorType == u'Temperature':
-                 print(sensor.Name)
-                 print(sensor.Value)
+              if sensor.SensorType == u'Temperature':
+                self.plugin.TriggerEvent("WMI_Sense_"+sensor.SensorType+"_"+sensor.Name, sensor.Value)
+                print(sensor.Name)
+                print(sensor.Value)
             self.event.clear()
             self.event.wait(self.updatetime)
             
