@@ -37,6 +37,7 @@ class ThreadedSensor(object):
             for sensor in data:
               self.plugin.TriggerEvent("WMI_Sense_"+sensor.SensorType+"_"+sensor.Name, sensor.Value)
               # if sensor.SensorType == u'Temperature':
+              #   self.plugin.TriggerEvent("WMI_Sense_"+sensor.SensorType+"_"+sensor.Name, sensor.Value)
               #   print(sensor.Name)
               #   print(sensor.Value)
             self.event.clear()
