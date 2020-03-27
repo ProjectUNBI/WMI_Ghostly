@@ -12,9 +12,8 @@ eg.RegisterPlugin(
     description="WMI module + Open Hardware Monitor. Please install and run Open Hardware Monitor. (https://openhardwaremonitor.org/documentation/)."
 )
 
-
-
 import wmi
+import pythoncom
 
 def wmi_log(data):
   print("WMI: "+data)
@@ -30,6 +29,7 @@ class ThreadedSensor(object):
         threading.Thread(target=self.selfsense).start()
 
     def selfsense(self):
+        pythoncom.CoInitialize()
         w = wmi.WMI(namespace="root\OpenHardwareMonitor")
         while self.is_sensing:
             # wmi_log("Sensing")
