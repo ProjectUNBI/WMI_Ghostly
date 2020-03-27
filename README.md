@@ -6,7 +6,7 @@ WMI plugin for Eventghost to measure the CPU temperature,usage,etc....
 
 Note: You need to download this "https://openhardwaremonitor.org/downloads/" and have to run it to make WMI work. 
 
-Okey... you must install the eventghost
+Okey... you must install the eventghost<br />
 Clone these files and move to your event ghost file.
 
  Move these flollowing file [which is in this repo] to your Eventghost installaton directory
@@ -18,13 +18,13 @@ Clone these files and move to your event ghost file.
 /EventGhost/lib27/site-packages/WMI-1.4.9.dist-info/WHEEL<br />
 /EventGhost/lib27/site-packages/wmi.py<br />
 /EventGhost/lib27/site-packages/wmi.pyc<br />
-/EventGhost/plugins/WMI/__init__.py<br />
+/EventGhost/plugins/WMI/__init__.py<br /><br />
 
-eg: move "/EventGhost/lib27/site-packages/wmi.py" in "C:\Program Files (x86)\EventGhost\lib27\site-packages"
+eg: move "/EventGhost/lib27/site-packages/wmi.py" in "C:\Program Files (x86)\EventGhost\lib27\site-packages\wmi.py"<br />
 
-Restart the Eventghost
+Restart the Eventghost<br /><br />
 
-add the plugin in "Autostart"->"Add Plugin"->"General Plugins"->"WMI Ghostly" and set the time
+add the plugin in "Autostart"->"Add Plugin"->"General Plugins"->"WMI Ghostly" and set the time<br /><br />
 
 # Modifications:
 
