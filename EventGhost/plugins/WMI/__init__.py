@@ -84,7 +84,7 @@ class WMI_Sense(eg.PluginBase):
         # publicIpCtrl = self.addLine("Your Public IP or Host Name (like a dyndns host name). Leave blank to get it automatically", "")
         # textControl = wx.TextCtrl(panel, -1, myport)
         text = 'Please select the update frequency.'
-        u_time = self.addLine(text + "Seconnds per update", panel.SpinIntCtrl(update_time, min=1, max=65535))
+        u_time = self.addLine(text + "Seconds per update", panel.SpinIntCtrl(update_time, min=1, max=65535))
         # panel.sizer.Add(textControl, 1, wx.EXPAND)
         while panel.Affirmed():
             panel.SetResult(u_time.GetValue())
