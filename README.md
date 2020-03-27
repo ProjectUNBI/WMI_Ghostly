@@ -1,5 +1,5 @@
 # WMI_Ghostly
-WMI plugin for Eventghost to measure the CPU temperature,usage,etc....
+WMI plugin for Eventghost to triggrt task by CPU temperature,usage,etc....
 
 
 # How to add???
